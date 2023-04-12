@@ -26,11 +26,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.wrapper {
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -38,10 +34,10 @@ body {
   padding-right: 15px;
   width: 1158px;
 }
-.wrap {
+/* .wrap {
   display: flex;
   align-items: center;
-}
+} */
 
 h1,
 h2,
@@ -138,14 +134,34 @@ p {
   padding-bottom: 24px;
   color: var(--primari-text-color);
 }
+/**
+  |============================
+  |         hero setion 
+  |============================
+*/
 
-/* hero setion */
 .hero {
   padding-top: var(--hero-padding);
   padding-bottom: var(--hero-padding);
+  min-height: 600px;
 
+  max-width: 1440px;
+  margin: auto;
   background-color: var(--title-text-color);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/card-fon/people-office-1.jpg);
+  background-size: cover;
+  /* background-size: contain; */
+  background-position: center;
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
   text-align: center;
+  outline: 2px solid green;
 }
 
 .hero-title {
@@ -187,6 +203,7 @@ p {
   padding: 120px 0 120px 0;
 }
 
+/* approaches */
 .section-approaches {
   padding: 120px 0;
 }
@@ -226,6 +243,29 @@ p {
   width: calc((100% - 72px) / 4);
 }
 
+.feature-item::before {
+  display: block;
+  margin-bottom: 8px;
+  content: "";
+  height: 112px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+}
+.feature-icon-antenna::before {
+  background-image: url(../images/icons/Group.svg);
+}
+.feature-icon-clock::before {
+  background-image: url(../images/icons/clock-1.svg);
+}
+.feature-icon-diagram::before {
+  background-image: url(../images/icons/diagram-1.svg);
+}
+.feature-icon-astronaut::before {
+  background-image: url(../images/icons/astronaut-1.svg);
+}
+
 /* section What are we doing */
 .projects {
   display: flex;
@@ -263,12 +303,41 @@ p {
 .card-box {
   padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
+  outline: 2px solid red;
 }
 .text {
   color: var(--primari-text-color);
 }
 .text-center {
   text-align: center;
+  margin-bottom: 8px;
+}
+.card-icon {
+  display: block;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.card-icon-item {
+  width: 40px;
+  height: 40px;
+  outline: 2px solid blue;
+}
+
+/* Customers */
+.customers-list {
+  display: block;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.customers-item {
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 
 /* footer */
@@ -278,6 +347,12 @@ p {
 
   background-color: var(--title-text-color);
   color: var(--section-our-team-color);
+}
+.footer-wrapper {
+  display: flex;
+}
+.footer-box {
+  margin-right: 120px;
 }
 
 .footer-logo .logo-studio {
@@ -291,13 +366,32 @@ p {
 .content {
   max-width: 264px;
 }
+
+.social-madia {
+  width: 208px;
+  margin-right: 0;
+}
+.foter-media {
+  margin-bottom: 16px;
+}
+.media-list {
+  display: block;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.media-item {
+  width: 40px;
+  height: 40px;
+  outline: 3px solid red;
+}
+
 /**
   |============================
   |  portfolio 
   |============================
 */
 .work {
-  /* padding: 96px 120px; */
   padding: 96px 0 120px 0;
 }
 .work-btn {
