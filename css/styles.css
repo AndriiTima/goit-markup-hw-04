@@ -253,7 +253,7 @@ p {
   background-color: #f4f4fd;
 }
 .feature-icon-antenna::before {
-  background-image: url(../images/icons/Group.svg);
+  background-image: url(../images/icons/antenna-1.svg);
 }
 .feature-icon-clock::before {
   background-image: url(../images/icons/clock-1.svg);
