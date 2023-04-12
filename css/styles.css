@@ -34,10 +34,10 @@ body {
   padding-right: 15px;
   width: 1158px;
 }
-/* .wrap {
+.wrap {
   display: flex;
   align-items: center;
-} */
+}
 
 h1,
 h2,
@@ -150,8 +150,7 @@ p {
   background-color: var(--title-text-color);
 
   background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
+      /* to right, */ rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/card-fon/people-office-1.jpg);
@@ -303,7 +302,6 @@ p {
 .card-box {
   padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
-  outline: 2px solid red;
 }
 .text {
   color: var(--primari-text-color);
@@ -312,17 +310,29 @@ p {
   text-align: center;
   margin-bottom: 8px;
 }
-.card-icon {
+.icon-list {
   display: block;
   display: flex;
   justify-content: center;
   gap: 24px;
 }
 
-.card-icon-item {
+.icon-item {
   width: 40px;
   height: 40px;
-  outline: 2px solid blue;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.icon-item:hover,
+.icon-item:focus {
+  background-color: #404bbf;
+}
+
+.icon {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 
 /* Customers */
@@ -338,6 +348,21 @@ p {
   padding: 16px 32px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+}
+.customers-icon {
+  display: block;
+  width: 104px;
+  height: 56px;
+  fill: #8e8f99;
+}
+
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid #404bbf;
+}
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: #404bbf;
 }
 
 /* footer */
@@ -377,13 +402,23 @@ p {
 .media-list {
   display: block;
   display: flex;
-  justify-content: center;
   gap: 16px;
 }
 .media-item {
   width: 40px;
   height: 40px;
-  outline: 3px solid red;
+  padding: 8px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+.media-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.media-item:hover,
+.media-item:focus {
+  background-color: #31d0aa;
 }
 
 /**
@@ -444,35 +479,3 @@ p {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
 }
-
-/* .address-item {
-  margin-right: 40px;
-}
-.address-item:last-child {
-  margin-right: 0;
-} */
-
-/* .address-item:not(:last-child) {
-  margin-right: 40px;
-} */
-
-/* margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-bottom: calc(-1 * var(--card-set-gap)); */
-
-/* .btn-item:not(:last-child) {
-  margin-right: 24px;
-} */
-/* margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
-  margin-bottom: var(--card-set-gap); */
-
-/* .card-item:not(:last-child) {
-  margin-right: 24px;
-} */
-/* .address-item + .address-item {
-  margin-left: 40px;
-} */
-/* .feature-item + .feature-item {
-  margin-left: 24px;
-} */
