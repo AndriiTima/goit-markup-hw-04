@@ -7,6 +7,7 @@
   --section-our-team-color: #f4f4fd;
   --footer-text-color: #f4f4fd;
   --button-color: #e7e9fc;
+  --cust-icon: #afb1b8;
   --hero-padding: 188px;
   --btn-padding: 88px;
   --section-padding: 120px;
@@ -363,20 +364,20 @@ p {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  fill: #8e8f99;
+  color: var(--cust-icon);
 }
 .customers-icon {
   display: block;
-  color: currentColor;
+  fill: currentColor;
 }
 
 .icon-link:hover,
 .icon-link:focus {
   border: 1px solid #404bbf;
-  fill: #404bbf;
+  color: #404bbf;
 }
 
-/* footer */
+/* ----------------------------footer------------- */
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -481,6 +482,8 @@ p {
   color: var(--hero-text-color);
   background-color: var(--hover-color);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .work-list {
@@ -500,4 +503,12 @@ p {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
+}
+.prodject-link {
+  display: block;
+}
+.prodject-link:hover,
+.prodject-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
