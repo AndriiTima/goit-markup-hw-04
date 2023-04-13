@@ -246,8 +246,6 @@ p {
 
 .approches-icon {
   display: block;
-  /* height: 64px;
-  width: 64px; */
 }
 
 .feature-list {
@@ -317,7 +315,6 @@ p {
 .icon-item {
   width: 40px;
   height: 40px;
-  /* padding: 12px; */
 }
 .card-icon-link {
   display: flex;
@@ -336,8 +333,6 @@ p {
 
 .icons {
   display: block;
-  /* width: 16px;
-  height: 16px; */
   fill: #f4f4fd;
 }
 
@@ -365,6 +360,7 @@ p {
   justify-content: center;
   align-items: center;
   color: var(--cust-icon);
+  align-self: start;
 }
 .customers-icon {
   display: block;
@@ -377,7 +373,7 @@ p {
   color: #404bbf;
 }
 
-/* ----------------------------footer------------- */
+/* --------------------------footer------------- */
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -387,9 +383,7 @@ p {
 .footer-wrapper {
   display: flex;
   align-items: baseline;
-}
-.footer-box {
-  margin-right: 120px;
+  gap: 120px;
 }
 
 .footer-logo .logo-studio {
